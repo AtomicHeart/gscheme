@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <div>
+            <div class="logo">
+                gScheme.js
+            </div>
+        </div>
+        <div id="view">
+        </div>
+
+        <div id="root" class="root">
+            <div id="scheme" class="scheme"></div>
+            <svg id="wiring" class="wiring" width="100%" height="100%" preserveAspectRatio="none"></svg>
+        </div>
+
+        <div id="controls" class="controls">
+            <button name="add" value="pickup">Add pickup (2)</button>
+            <button name="add" value="switcher4">Add switcher4 (8)</button>
+            <button name="add" value="out">Add out (2)</button>
+        </div>
+
+        <div class="info">
+            Выводов: <span class="js-pins-count">-</span><br/>
+            Вариантов коммутации: <span class="js-variants-count">-</span><br/>
+        </div>
+        <div id="matrices" class="matrices">
+
+        </div>
+
+        <script src="commutator.js"></script>
+        <script src="control.js"></script>
+    </body>
+</html>

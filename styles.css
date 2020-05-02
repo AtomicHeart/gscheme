@@ -1,0 +1,139 @@
+body {
+    background-color: #f0f0f0;
+}
+
+img {
+    display: block;
+    pointer-events: none;
+}
+
+.root {
+    position: relative;
+}
+
+.scheme {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.scheme > .device {
+    margin: 0 60px;
+}
+
+.wiring {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.wiretest {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.device span {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    box-sizing: content-box;
+    background-color: silver;
+    border: 2px solid black;
+}
+
+.device span[data-status="GROUNDED"] {
+    background-color: black;
+}
+
+.device {
+    flex-grow: 0;
+    flex-shrink: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.pickup span:nth-of-type(1) {
+    left: 60px;
+    top: 80px;
+}
+
+.pickup span:nth-of-type(2) {
+    left: 60px;
+    top: 120px;
+}
+
+.switcher4 {
+}
+
+.switcher4 span:nth-of-type(1),
+.switcher4 span:nth-of-type(3),
+.switcher4 span:nth-of-type(5),
+.switcher4 span:nth-of-type(7) {
+    left: 10px;
+}
+
+.switcher4 span:nth-of-type(2),
+.switcher4 span:nth-of-type(4),
+.switcher4 span:nth-of-type(6),
+.switcher4 span:nth-of-type(8) {
+    left: 36px;
+}
+
+.switcher4 span:nth-of-type(1),
+.switcher4 span:nth-of-type(2) {
+    top: 12px;
+}
+
+.switcher4 span:nth-of-type(3),
+.switcher4 span:nth-of-type(4) {
+    top: 34px;
+}
+
+.switcher4 span:nth-of-type(5),
+.switcher4 span:nth-of-type(6) {
+    top: 56px;
+}
+
+.switcher4 span:nth-of-type(7),
+.switcher4 span:nth-of-type(8) {
+    top: 78px;
+}
+
+.jack span:nth-of-type(1) {
+    top: 37px;
+    left: 8px;
+}
+
+.jack span:nth-of-type(2) {
+    top: 14px;
+    left: 66px;
+}
+
+.matrices {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.matrices > * {
+    padding: 10px;
+    white-space: nowrap;
+    font-family: Monospaced, sans-serif;
+}
+
+.logo {
+    display: inline-block;
+    padding: 30px;
+    font-family: 'Impact', sans-serif;
+    font-weight: 500;
+    text-shadow: 2px 1px 2px rgba(215, 30, 30, 0.4), -2px 1px 2px rgba(30, 92, 215, 0.4);
+    font-size: 40px;
+    color: transparent;
+    letter-spacing: 0.1em;
+}
